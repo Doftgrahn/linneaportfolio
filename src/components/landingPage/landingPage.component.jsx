@@ -4,7 +4,7 @@ import './LandingPage.scss';
 class LandingPageComponent extends Component {
   render() {
     return (<main>
-      <h1>This is my landing page</h1>
+      <h1>This is my Landing Page</h1>
     </main>)
   }
 }

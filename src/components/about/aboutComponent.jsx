@@ -3,9 +3,9 @@ import './About.scss';
 
 class AboutComponent extends Component {
   render() {
-    return (<div>
+    return (<main>
       <h1>This is About Page</h1>
-    </div>);
+    </main>);
   }
 }
 
