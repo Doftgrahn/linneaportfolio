@@ -8,8 +8,8 @@ import EventComponent from '../event/event.component';
 import AboutComponent from '../about/aboutComponent';
 
 class ContainerRouting extends Component {
-  render() {
 
+  render() {
     return (<div>
       <Switch>
         <Route exact path="/" component={LandingPageComponent}/>
