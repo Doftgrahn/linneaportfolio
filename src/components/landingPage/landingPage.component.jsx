@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import './LandingPage.scss';
 
 class LandingPageComponent extends Component {
+  heroImg = '../../../public/assets/pictures/linnea.jpg';
+
   render() {
-    return (<main>
-      <h1>This is my Landing Page</h1>
+    return (<main className="landingPage__main">
+      
     </main>)
   }
 }

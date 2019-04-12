@@ -1,7 +1,14 @@
-main {
-  min-height: 100vh;
+.landingPage__main {
+  min-height: 120vh;
+  background-image: url("../shared/pictures/linnea.jpg");
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   h1 {
-    text-align: center;
+    color: white;
   }
 }

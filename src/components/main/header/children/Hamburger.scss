@@ -9,7 +9,8 @@
   margin-right: 20px;
   padding: 10px;
   @media screen and (min-width: 800px) {
-    display: none;
+    position: absolute;
+    left: 5000px;
   }
 
   span {
@@ -19,7 +20,7 @@
     height: 4px;
     margin-bottom: 8px;
     transition: 0.5s;
-    background-color: black;
+    background-color: white;
 
     &:nth-child(1) {
       transform-origin: left;
