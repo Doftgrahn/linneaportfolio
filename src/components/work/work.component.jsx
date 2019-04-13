@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 
 import './Work.scss';
-import NavBarWork from './children/navbarChildren/navBarWork';
+import NavBarWork from '../main/header/children/navbarChildren/navBarWork';
 import RoutingChildren from '../shared/routing-children';
 
 class WorkComponent extends Component {

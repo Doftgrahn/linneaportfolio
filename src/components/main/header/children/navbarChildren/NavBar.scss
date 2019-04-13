@@ -1,0 +1,31 @@
+.navBar-children {
+  padding-top:70px;
+   display: inline-block;
+  width: 100%;
+
+  ul {
+    margin:0;
+    width: 100%;
+    flex-wrap: wrap;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+
+    li {
+      padding: 10px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .routerLinks {
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+      }
+    }
+  }
+}

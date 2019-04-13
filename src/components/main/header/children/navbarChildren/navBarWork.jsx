@@ -5,19 +5,19 @@ import {Link} from "react-router-dom";
 
 let link = [
   {
-    name: 'eyesToEars',
+    name: 'EyesToEars',
     className: 'routerLinks',
     to: '/work: eyesToEars'
   }, {
-    name: 'freelance',
+    name: 'Freelance',
     className: 'routerLinks',
     to: '/work: freelance'
   }, {
-    name: 'paintings',
+    name: 'Paintings',
     className: 'routerLinks',
     to: '/work: paintings'
   }, {
-    name: 'visuals',
+    name: 'Visuals',
     className: 'routerLinks',
     to: '/work: visuals'
   }, {
@@ -37,7 +37,7 @@ class NavBarWork extends Component {
       <Link className={links.className} to={links.to}>{links.name}
       </Link>
     </li>);
-    return ((<nav className="navBar-children" >
+    return ((<nav className="navBar-children">
       <ul>{links}</ul>
     </nav>))
   }

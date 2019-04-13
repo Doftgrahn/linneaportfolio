@@ -40,10 +40,10 @@ class Navbar extends Component {
         toggle
         ? 'h_active'
         : '')}>
-      <ul>{links}</ul>
+      <ul>{links}
+      </ul>
     </nav>)
   }
 }
-
 
 export default Navbar;
