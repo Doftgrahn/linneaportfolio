@@ -7,10 +7,13 @@ import WorkComponent from '../work/work.component';
 import EventComponent from '../event/event.component';
 import AboutComponent from '../about/aboutComponent';
 
+
+/*Children to WorkComponent*/
+
 class ContainerRouting extends Component {
 
   render() {
-    return (<div>
+    return (<main>
       <Switch>
         <Route exact path="/" component={LandingPageComponent}/>
         <Route path="/home" component={LandingPageComponent}/>
@@ -18,7 +21,7 @@ class ContainerRouting extends Component {
         <Route path="/event" component={EventComponent}/>
         <Route path="/about" component={AboutComponent}/>
       </Switch>
-    </div>)
+    </main>)
   }
 }
 

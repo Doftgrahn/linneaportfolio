@@ -1,10 +1,19 @@
 import React, {Component} from 'react';
+
+import {BrowserRouter as Router} from "react-router-dom";
+
 import './Work.scss';
+import NavBarWork from './children/navbarChildren/navBarWork';
+import RoutingChildren from '../shared/routing-children';
 
 class WorkComponent extends Component {
   render() {
-    return (<main>
-      <h1>This is Workpage</h1>
+
+    return (<main className="work">
+      <Router>
+        <NavBarWork className="navbar"/>
+        <RoutingChildren/>
+      </Router>
     </main>)
   }
 }

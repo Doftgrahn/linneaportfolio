@@ -6,6 +6,8 @@ import Hamburger from './children/hamburger';
 import Navbar from './children/navbar';
 
 class HeaderComponent extends Component {
+
+
   state = {
     toggle: false
   }
@@ -20,9 +22,8 @@ class HeaderComponent extends Component {
   stateFalse = () => {
     this.setState({toggle: false})
   }
-  
-  title = () => <Link className="title" to="/home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
 
+  title = () => <Link className="title" to="/home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
 
   render() {
     let {toggle} = this.state;
