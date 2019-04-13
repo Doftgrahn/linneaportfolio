@@ -1,13 +1,16 @@
 .landingPage {
   min-height: 100vh;
-  background-image: url("../shared/pictures/linnea.jpg");
+  background-color: gray;
   background-size: cover;
+  background-repeat: no-repeat;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   @media screen and (min-width: 800px) {
     align-items: center;
+    background-size: cover;
+    background-image: url("../shared/pictures/linnea.jpg");
   }
 
   h1 {

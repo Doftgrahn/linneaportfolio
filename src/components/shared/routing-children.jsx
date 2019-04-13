@@ -9,9 +9,12 @@ import Visuals from '../work/children/visuals/visuals';
 import Wildhart from '../work/children/wildhart/wildhart';
 import Workshop from '../work/children/workshop/workshop';
 
+import General from '../work/children/general/general';
+
 class RoutingChildren extends Component {
   render() {
     return (<Switch>
+      <Route path="/work: general" component={General}/>
       <Route path="/work: eyesToEars" component={EyesToEars}/>
       <Route path="/work: freelance" component={Freelance}/>
       <Route path="/work: paintings" component={Paintings}/>

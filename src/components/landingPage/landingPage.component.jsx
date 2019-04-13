@@ -3,7 +3,6 @@ import './LandingPage.scss'
 import {Link} from "react-router-dom";
 
 class LandingPageComponent extends Component {
-  heroImg = '../../../public/assets/pictures/linnea.jpg';
 
   toWork = () => <Link className="title" to="/work">
     Click here to check out my stuff!

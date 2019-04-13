@@ -9,13 +9,11 @@ import ContainerRouting from './components/shared/routing';
 class App extends Component {
 
   render() {
-    return (<main>
-      <Router>
-        <HeaderComponent/>
-        <ContainerRouting/>
-        <FooterComponent/>
-      </Router>
-    </main>);
+    return (<Router>
+      <HeaderComponent/>
+      <ContainerRouting/>
+      <FooterComponent/>
+    </Router>);
   }
 }
 
