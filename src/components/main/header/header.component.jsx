@@ -7,7 +7,6 @@ import Navbar from './children/navbar';
 
 class HeaderComponent extends Component {
 
-
   state = {
     toggle: false
   }

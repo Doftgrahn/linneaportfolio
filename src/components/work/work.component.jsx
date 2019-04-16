@@ -1,21 +1,31 @@
 import React, {Component} from 'react';
 
-import {HashRouter as Router} from "react-router-dom";
+//import {HashRouter as Router} from "react-router-dom";
 
 import './Work.scss';
-import NavBarWork from '../main/header/children/navbarChildren/navBarWork';
-import RoutingChildren from '../shared/routing-children';
+import NavBarWork from './navbarChildren/navBarWork';
+import RoutingChildren from './routing-children';
 
 class WorkComponent extends Component {
 
-  render() {
-    return (<main className="work">
-      <Router>
-        <NavBarWork className="navbar"/>
-        <RoutingChildren/>
-      </Router>
-    </main>)
-  }
+    toggleGeneral = () => {
+        let {general} = this.state
+        this.setState({
+            general: !general
+        })
+    }
+
+    ShowRoutingChildren = () => {
+        this.setState({general: false})
+    }
+
+    render() {
+        let {match} = this.props;
+        return (<main className="work">
+            <NavBarWork match={match} className="navbar"/>
+            <RoutingChildren match={match}/>
+        </main>)
+    }
 }
 
 export default WorkComponent;
