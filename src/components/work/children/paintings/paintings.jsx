@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../Children.scss';
 
 class Paintings extends Component {
   render() {
@@ -9,4 +8,4 @@ class Paintings extends Component {
   }
 }
 
-export default Paintings
+export default Paintings;

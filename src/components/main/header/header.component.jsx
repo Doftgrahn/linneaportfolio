@@ -22,7 +22,7 @@ class HeaderComponent extends Component {
     this.setState({toggle: false})
   }
 
-  title = () => <Link className="title" to="/home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
+  title = () => <Link className="title" to="/Home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
 
   render() {
     let {toggle} = this.state;

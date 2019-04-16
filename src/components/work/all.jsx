@@ -10,15 +10,16 @@ import Workshop from './children/workshop/workshop';
 class All extends Component {
     render() {
         const {match} = this.props;
-        let id = match.params.id;
-return (<main>
+        const id = match.params.id;
+return (
+        <main>
     {(id === 'EyesToEars') ? <EyesToEars/>:
     (id ==='Freelance') ? <Freelance/>:
     (id === 'Paintings') ? <Paintings/>:
     (id === 'Visuals') ? <Visuals/>:
     (id === 'Wildhart') ? <Wildhart/>
-    : <Workshop/>
-        }</main>)
+    : <Workshop/>}
+        </main>)
     }
 }
 

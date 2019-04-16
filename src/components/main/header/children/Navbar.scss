@@ -1,65 +1,66 @@
 .navBar {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 100%;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 150px 200px 50px;
-  transition: 0.5s;
-  background-color: black;
-  @media screen and (min-width: 800px) {
-    position: static;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin-right: 50px;
-    padding: 0;
-    background: none;
-  }
-
-  ul {
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 100%;
     display: flex;
-    flex-direction: column;
-    list-style-type: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 150px 200px 50px;
+    transition: 0.5s;
+    background-color: black;
     @media screen and (min-width: 800px) {
-      flex-direction: row;
+        position: static;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-right: 50px;
+        padding: 0;
+        background: none;
     }
 
-    li {
-      font-size: 40px;
-      margin-top: 20px;
-      text-decoration: none;
-      @media screen and(min-width: 800px) {
-        font-size: 20px;
-        margin-top: auto;
-        margin-left: 20px;
-      }
-
-      .routerLinks {
-        cursor: pointer;
-        transition: 0.2s;
-        text-decoration: none;
-        color: white;
-        outline: none;
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
         @media screen and (min-width: 800px) {
-          color: white;
+            flex-direction: row;
         }
 
-        &:hover {
-          color: gray;
+        li {
+            font-size: 40px;
+            margin-top: 20px;
+            text-decoration: none;
+            @media screen and(min-width: 800px) {
+                font-size: 20px;
+                margin-top: auto;
+                margin-left: 20px;
+            }
+
+            .routerLinks {
+                cursor: pointer;
+                transition: 0.2s;
+                text-decoration: none;
+                color: white;
+                outline: none;
+                @media screen and (min-width: 800px) {
+                    color: white;
+                }
+
+                &:hover {
+                    color: gray;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .h_active {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
 }

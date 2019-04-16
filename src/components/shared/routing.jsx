@@ -12,10 +12,10 @@ class ContainerRouting extends Component {
     render() {
         return (<Switch>
             <Route exact={true} path="/" component={LandingPageComponent}/>
-            <Route path="/home" component={LandingPageComponent}/>
-            <Route path="/work" component={WorkComponent}/>
-            <Route path="/event" component={EventComponent}/>
-            <Route path="/about" component={AboutComponent}/>
+            <Route path="/Home" component={LandingPageComponent}/>
+            <Route path="/Work" component={WorkComponent}/>
+            <Route path="/Event" component={EventComponent}/>
+            <Route path="/About" component={AboutComponent}/>
             <Route path="*" component={LandingPageComponent}/>
         </Switch>)
     }

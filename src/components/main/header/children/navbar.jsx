@@ -11,22 +11,22 @@ class Navbar extends Component {
       {
         name: 'Home',
         className: 'routerLinks',
-        to: '/home/',
+        to: '/Home',
         event: () => stateFalse()
       }, {
         name: 'Work',
         className: 'routerLinks',
-        to: '/work/',
+        to: '/Work',
         event: () => stateFalse()
       }, {
         name: 'Event',
         className: 'routerLinks',
-        to: '/event/',
+        to: '/Event',
         event: () => stateFalse()
       }, {
         name: 'About',
         className: 'routerLinks',
-        to: '/about/',
+        to: '/About',
         event: () => stateFalse()
       }
     ];

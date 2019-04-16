@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import General from './general/general';
 import All from './all';
 
+import './children/Children.scss';
+
 class RoutingChildren extends Component {
     render() {
-        let {match} = this.props;
-        return (<main>
-            <Route match={match} path={`${match.path}/:id`} component= {All} />
-            <Route exact={true} path={match.path} component={General}/>
-        </main>)
+        const {match, title} = this.props;
+        return (<Switch>
+            <Route match={match} path={`${match.path}/:id`} component={All}/>
+            <Route exact={true} title= {title} match={match} path={match.path} component={General}/>
+        </Switch>)
     }
 }
 

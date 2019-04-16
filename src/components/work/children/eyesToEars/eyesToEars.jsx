@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../Children.scss';
+
 
 class EyesToEars extends Component {
   render() {

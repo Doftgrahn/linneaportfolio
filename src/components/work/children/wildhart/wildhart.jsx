@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../Children.scss';
 
 class WildHart extends Component {
   render() {
