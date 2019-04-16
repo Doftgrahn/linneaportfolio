@@ -15,7 +15,7 @@ class WorkComponent extends Component {
                 title: 'EyesToEars'
             }, {
                 id: 2,
-                title: 'FreeLance'
+                title: 'Freelance'
             }, {
                 id: 3,
                 title: 'Paintings'
@@ -33,7 +33,7 @@ class WorkComponent extends Component {
     }
 
     render() {
-        const {title} = this.state
+        const {title} = this.state;
         const {match} = this.props;
         return (<main className="work">
             <NavBarWork title={title} match={match} className="navbar"/>

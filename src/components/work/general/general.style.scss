@@ -1,24 +1,29 @@
 .general {
-    display: flex;
-    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
 
     &_wrapper {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
+        padding: 1px;
+    }
+
+    .links {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+            color: lightblue;
+        }
     }
 
     &_container {
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
 
         div {
+            width: 50%;
             flex: auto;
-            height: 200px;
-            margin: 2px;
+            margin: 0 10px;
             border: 1px solid lightblue;
 
             h3 {

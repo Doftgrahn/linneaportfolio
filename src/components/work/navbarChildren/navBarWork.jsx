@@ -7,7 +7,6 @@ class NavBarWork extends Component {
 
     render() {
         const {match, title} = this.props;
-        console.log('hej', title);
         const links = title.map((li, index) => <li key={index}>
             <Link className="routerLinks" to={`${match.path}/${li.title}`}>{li.title}</Link>
         </li>);

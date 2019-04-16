@@ -12,7 +12,7 @@ class General extends Component {
                 title: 'EyesToEars'
             }, {
                 id: 2,
-                title: 'FreeLance'
+                title: 'Freelance'
             }, {
                 id: 3,
                 title: 'Paintings'
@@ -31,7 +31,7 @@ class General extends Component {
 
     renderTitle = (project) => {
         const {match} = this.props;
-        return <Link key={project.id} className="routerLinks" to={`${match.path}/${project.title}`}><Container key={project.id} title={project.title}/></Link>
+        return <Link className="links" key={project.id} to={`${match.path}/${project.title}`}><Container key={project.id} title={project.title}/></Link>
     }
 
     render() {
