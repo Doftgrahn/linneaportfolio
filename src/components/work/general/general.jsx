@@ -31,7 +31,7 @@ class General extends Component {
 
     renderTitle = (project) => {
         const {match} = this.props;
-        return <Link className="links" key={project.id} to={`${match.path}/${project.title}`}><Container key={project.id} title={project.title}/></Link>
+        return <Link className="links" key={project.id} to={`${match.path}/${project.title}`}><Container title={project.title}/></Link>
     }
 
     render() {

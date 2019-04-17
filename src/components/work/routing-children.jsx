@@ -6,11 +6,12 @@ import All from './all';
 import './children/Children.scss';
 
 class RoutingChildren extends Component {
+
     render() {
-        const {match, title} = this.props;
+        const {match} = this.props;
         return (<Switch>
             <Route match={match} path={`${match.path}/:id`} component={All}/>
-            <Route exact={true} title= {title} match={match} path={match.path} component={General}/>
+            <Route exact={true} match={match} path={match.path} component={General}/>
         </Switch>)
     }
 }

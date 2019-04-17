@@ -7,6 +7,7 @@ import FooterComponent from './components/main/footer/footer.component';
 import ContainerRouting from './components/shared/routing';
 
 class App extends Component {
+
     render() {
         return (<Router>
             <HeaderComponent/>

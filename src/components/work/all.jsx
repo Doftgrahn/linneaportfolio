@@ -13,10 +13,11 @@ class All extends Component {
         const {match} = this.props;
         const {id} = match.params;
 return (<main>
-    {(id === 'EyesToEars') ? <EyesToEars/>:
-    (id ==='Freelance') ? <Freelance/>:
-    (id === 'Paintings') ? <Paintings/>:
-    (id === 'Visuals') ? <Visuals/>:
+    {
+    (id === 'EyesToEars') ? <EyesToEars/> :
+    (id ==='Freelance') ? <Freelance/> :
+    (id === 'Paintings') ? <Paintings/> :
+    (id === 'Visuals') ? <Visuals/> :
     (id === 'Wildhart') ? <Wildhart/>
     : <Workshop/>}
         </main>)

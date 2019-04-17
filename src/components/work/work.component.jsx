@@ -30,7 +30,7 @@ class WorkComponent extends Component {
                 title: 'WorkShops'
             }
         ]
-    }
+    };
 
     render() {
         const {title} = this.state;
