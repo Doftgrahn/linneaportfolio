@@ -8,11 +8,13 @@ import Visuals from './children/visuals/visuals';
 import Wildhart from './children/wildhart/wildhart';
 import Workshop from './children/workshop/workshop';
 
+
 class All extends Component {
     render() {
         const {match} = this.props;
         const {id} = match.params;
 return (<main>
+
     {
     (id === 'EyesToEars') ? <EyesToEars/> :
     (id ==='Freelance') ? <Freelance/> :

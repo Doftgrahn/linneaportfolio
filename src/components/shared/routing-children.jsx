@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import General from './general/general';
-import All from './all';
 
-import './children/Children.scss';
+import General from '../work/general/general';
+import All from '../work/all';
+
+import '../work/children/Children.scss';
 
 class RoutingChildren extends Component {
 

@@ -18,6 +18,7 @@ class ContainerRouting extends Component {
             <Route path="/About" component={AboutComponent}/>
             <Route path="*" component={LandingPageComponent}/>
         </Switch>)
+
     }
 }
 

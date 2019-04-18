@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 
-//import {HashRouter as Router} from "react-router-dom";
+
 
 import './Work.scss';
+
 import NavBarWork from './navbarChildren/navBarWork';
-import RoutingChildren from './routing-children';
+import RoutingChildren from '../shared/routing-children';
 
 class WorkComponent extends Component {
 
