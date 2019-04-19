@@ -11,9 +11,9 @@ class App extends Component {
     render() {
         return (<Router>
             <div>
-            <HeaderComponent/>
-            <ContainerRouting/>
-            <FooterComponent/>
+                <HeaderComponent/>
+                <ContainerRouting/>
+                <FooterComponent/>
             </div>
         </Router>);
     }

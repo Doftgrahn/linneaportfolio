@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 
 import upperLinnea from '../shared/pictures/LinneaTop.png';
 
+import bottomLinnea from '../shared/pictures/LinneaBottom.jpg';
+
 class LandingPageComponent extends Component {
 
     toWork = () => <Link className="title" to="/work">
@@ -11,8 +13,9 @@ class LandingPageComponent extends Component {
 
     render() {
         return (<main className="landingPage">
-            <div className="bottom_picture">
-                <img className="top_picture" src={upperLinnea} alt="UpperLinea"/>
+            <div className="picture_wrapper">
+                <img className="top_picture" src={upperLinnea} alt="Upper"/>
+                <img className="bottom_picture" src={bottomLinnea} alt="Bottom"/>
             </div>
         </main>)
     }
