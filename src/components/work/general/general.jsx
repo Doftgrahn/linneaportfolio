@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+    import React, {Component} from 'react';
 import './general.style.scss';
 import Container from './children/container';
 import {Link} from "react-router-dom";
@@ -35,9 +35,10 @@ class General extends Component {
     }
 
     render() {
+        const {title} = this.state;
         return (<main className="general">
             <section className="general_wrapper">
-                {this.state.title.map(this.renderTitle)}
+                {title.map(this.renderTitle)}
             </section>
 
         </main>)

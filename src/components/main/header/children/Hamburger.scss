@@ -1,4 +1,5 @@
 .hamburger {
+    overflow: hidden;
     margin-left: auto;
     position: relative;
     z-index: 10;
@@ -14,20 +15,22 @@
     }
 
     span {
+        border-radius: 20px;
+        z-index: 10;
         position: relative;
         display: block;
         width: 34px;
         height: 4px;
         margin-bottom: 8px;
-        transition: 0.5s;
+        transition: 0.4s;
         background-color: white;
 
         &:nth-child(1) {
-            transform-origin: left;
+            transform-origin: center;
         }
 
         &:nth-child(2) {
-            transform-origin: center;
+            transform-origin: right;
         }
 
         &:nth-child(3) {
@@ -38,12 +41,13 @@
     &.active span {
         &:nth-child(1) {
             left: 2px;
-            transform: rotate(45deg);
+            transform: translateY(20px)rotate(360deg);
         }
 
         &:nth-child(2) {
             right: 2px;
-            transform: rotate(670deg);
+            transform: rotate(135deg);
+            transform: scaleX(0);
         }
 
         &:nth-child(3) {

@@ -7,31 +7,34 @@ import Navbar from './children/navbar';
 
 class HeaderComponent extends Component {
 
-  state = {
-    toggle: false
-  }
+    state = {
+        toggle: false
+    }
 
-  toggleHamburger = () => {
-    let {toggle} = this.state;
-    this.setState({
-      toggle: !toggle
-    })
-  }
+    toggleHamburger = () => {
+        let {toggle} = this.state;
+        this.setState({
+            toggle: !toggle
+        })
+    }
 
-  stateFalse = () => {
-    this.setState({toggle: false})
-  }
+    stateFalse = () => {
+        this.setState({toggle: false})
+    }
 
-  title = () => <Link className="title" to="/Home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
+    title = () => {
+        return <Link className="title" to="/Home" onClick={this.stateFalse}>Linnea Jardemark</Link>;
+    }
 
-  render() {
-    let {toggle} = this.state;
-    return (<header>
-      <h1>{this.title()}</h1>
-      <Navbar toggle={toggle} stateFalse={this.stateFalse}/>
-      <Hamburger toggle={toggle} toggleHamburger={this.toggleHamburger}/>
-    </header>);
-  }
+    render() {
+        //let {site} = this.props;
+        let {toggle} = this.state;
+        return (<header>
+            <h1>{this.title()}</h1>
+            <Navbar toggle={toggle} stateFalse={this.stateFalse}/>
+            <Hamburger toggle={toggle} toggleHamburger={this.toggleHamburger}/>
+        </header>);
+    }
 }
 
 export default HeaderComponent;

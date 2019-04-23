@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-
-
 import './Work.scss';
 
 import NavBarWork from './navbarChildren/navBarWork';

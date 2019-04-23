@@ -1,7 +1,6 @@
 @import '../shared/variables';
 
 .about {
-    padding: 20px;
     width: 100%;
     height: 100vh;
     background-color: gray;
@@ -10,22 +9,29 @@
     align-items: center;
     flex-direction: column;
 
-    h1 {
+    h3 {
         color: white;
-        align-self: flex-start;
         padding: 20px;
         font-weight: bold;
-        margin-top: 100px;
     }
 
     &_wrapper {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         border-top: 20px solid lightblue;
-        height: 90%;
+        height: 100%;
         width: 100%;
+    }
+
+    .about_container {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid purple;
+
+        div {
+            background-color: lightblue;
+            padding: 20px;
+        }
     }
 }

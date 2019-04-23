@@ -14,6 +14,10 @@ class LandingPageComponent extends Component {
     render() {
         return (<main className="landingPage">
             <div className="picture_wrapper">
+                <div className="picture_wrapper-info">
+                    <h1>I'm Linnea, i'm an artist based in Göteborg, Sweden.</h1>
+                    <h3>{this.toWork()}</h3>
+                </div>
                 <img className="top_picture" src={upperLinnea} alt="Upper"/>
                 <img className="bottom_picture" src={bottomLinnea} alt="Bottom"/>
             </div>
@@ -22,6 +26,3 @@ class LandingPageComponent extends Component {
 }
 
 export default LandingPageComponent;
-
-/*   <h1>I'm Linnea, i'm an artist based in Göteborg, Sweden.</h1>
-    {this.toWork()}*/
