@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
+import React from "react";
 
-class Container extends Component {
-
-    render() {
-        const {title} = this.props;
-        return (<div className="general_container">
+const Container = ({title, picture}) => {
+    return (
+        <article className="general_container">
             <div>
-                <h3>{title}</h3>
+                <div className="info_wrapper">
+                    <h3>{title}</h3>
+                </div>
+                <div className="picture__wrapper">
+                    <img src={picture} alt={title} />
+                </div>
             </div>
-        </div>)
-    }
-}
+        </article>
+    );
+};
 export default Container;

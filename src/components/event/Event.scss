@@ -3,7 +3,7 @@
 .event {
     padding: $regular-spacing;
     width: 100%;
-    background-color: gray;
+    background-color: $color-green;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,11 @@
         margin-top: 20px;
         padding: 20px;
         transition: 0.4s;
-        animation: fade .5s linear;
+        animation: fade 0.5s linear;
 
         &:hover {
             transform: scale(1.01);
-            box-shadow:1px 1px black;
+            box-shadow: 1px 1px black;
         }
     }
     @keyframes fade {

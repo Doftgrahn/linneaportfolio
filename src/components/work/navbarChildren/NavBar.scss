@@ -1,5 +1,8 @@
+@import '../../shared/variables.scss';
+
 .navBar-children {
-    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,13 +22,13 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+        margin-top: 80px;
         @media screen and (min-width: 800px) {
             margin: 10px;
         }
 
         li {
-            flex: 1;
-            font-weight: bold;
+flex: 1;            font-weight: bold;
             margin-left: 10px;
             margin-top: 20px;
             transition: 0.2s;
@@ -35,7 +38,7 @@
 
             .routerLinks {
                 text-decoration: none;
-                color: white;
+                color: $color-white;
                 transition: 0.2s;
             }
         }

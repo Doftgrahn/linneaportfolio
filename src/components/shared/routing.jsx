@@ -13,7 +13,7 @@ class ContainerRouting extends Component {
         return (<Switch>
             <Route exact={true} path="/" component={LandingPageComponent}/>
             <Route path="/Home" component={LandingPageComponent}/>
-            <Route path="/Work" render={(props) => <WorkComponent {...props} isAuthed={true}/>}/>
+            <Route path="/Work" render={(props) => <WorkComponent {...props} count={this.props}/>}/>
             <Route path="/Event" component={EventComponent}/>
             <Route path="/About" component={AboutComponent}/>
             <Route path="*" component={LandingPageComponent}/>

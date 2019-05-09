@@ -3,7 +3,7 @@
 .about {
     width: 100%;
     height: 100vh;
-    background-color: gray;
+    background-color: $color-yellow;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        border-top: 20px solid lightblue;
+        border-top: 20px solid $color-red;
         height: 80%;
         width: 90%;
     }
@@ -27,15 +27,14 @@
     .about_container {
         flex: 1;
         padding: 20px;
-        border: 1px solid purple;
 
         div {
-            background-color: lightblue;
+            background-color: $color-white;
             padding: 20px;
 
             p {
                 margin: 3px;
-                padding:3px;
+                padding: 3px;
             }
         }
     }

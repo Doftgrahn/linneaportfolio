@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from "react";
 
-class Event extends Component {
-
-    render() {
-        let {title, content, createMarkup} = this.props;
-        return (<div>
+const Event = ({title, content, createMarkup}) => {
+    return (
+        <div>
             <h3>{title}</h3>
-            <div className="content" dangerouslySetInnerHTML={createMarkup(content)}/>
-        </div>)
-    }
-}
+            <div
+                className="content"
+                dangerouslySetInnerHTML={createMarkup(content)}
+            />
+        </div>
+    );
+};
 
 export default Event;

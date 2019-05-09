@@ -1,13 +1,17 @@
+@import '../../shared/variables.scss';
+
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     bottom: 0;
     left: 0;
     z-index: -1;
     padding: 20px;
     width: 100%;
-    background-color: gray;
+    height: 200px;
+    background-color: $color-green;
 
     .info {
         padding: 20px;
