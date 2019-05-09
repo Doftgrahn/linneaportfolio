@@ -9,16 +9,15 @@ import ContainerRouting from "./components/shared/routing";
 class App extends Component {
     state = {
         count: 0,
-        statezzz: false
     };
 
     render() {
-        let {count, statezzz} = this.state;
+        let {count} = this.state;
         return (
             <Router>
                 <div>
                     <HeaderComponent />
-                    <ContainerRouting count={count} state={statezzz} />
+                    <ContainerRouting count={count}  />
                     <FooterComponent />
                 </div>
             </Router>

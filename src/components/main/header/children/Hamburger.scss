@@ -1,3 +1,5 @@
+@import '../../../shared/variables.scss';
+
 .hamburger {
     overflow: hidden;
     margin-left: auto;
@@ -23,7 +25,7 @@
         height: 4px;
         margin-bottom: 8px;
         transition: 0.4s;
-        background-color: white;
+        background-color: $color-white;
 
         &:nth-child(1) {
             transform-origin: center;

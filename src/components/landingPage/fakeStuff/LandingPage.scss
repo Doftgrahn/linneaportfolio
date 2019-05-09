@@ -1,0 +1,86 @@
+@import '../shared/variables';
+
+.landingPage {
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    @media screen and (min-width: 800px) {
+        align-items: center;
+    }
+
+    .picture_wrapper {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        &-info {
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-weight: bold;
+            }
+        }
+
+        img {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            object-position: bottom 5% right;
+        }
+
+        .top_picture {
+            z-index: 1;
+        }
+
+        .bottom_picture {
+            overflow: hidden;
+            object-position: center;
+            transform: scale(2);
+            height: 100%;
+            width: 85%;
+            animation: hover 2s infinite alternate;
+        }
+        @keyframes hover {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            100% {
+                transform: translateY(-1%) translateX(-1%);
+            }
+        }
+    }
+
+    .title {
+        transition: 0.5 ease;
+        padding: 0;
+        font-weight: bold;
+        margin: 0;
+        color: $color-white;
+        text-align: left;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -5,32 +5,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-items: center;
+    justify-content: center;
     min-height: 100%;
-    min-width: 800px;
+    margin: 0 auto;
 
     .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 40%;
+        flex-wrap: wrap;
+        height: 100%;
         width: 100%;
         background-color: $color-yellow;
         margin-bottom: 40px;
         font-weight: bold;
         padding: 20px;
-        border-bottom: 20px solid $color-red;
+        @media screen and (min-width: 800px) {
+            height: 40%;
+            width: 100%;
+        }
 
         &_container {
-            height: 60%;
-            width: 82%;
+            margin: 0 auto;
+            height: 100%;
+            width: 100%;
             padding: 20px;
             background-color: $color-white;
 
             p {
+                font-weight: bold;
                 text-align: center;
                 color: $color-black;
-                padding: 20px;
             }
         }
     }
@@ -65,7 +72,7 @@
                 position: absolute;
                 display: block;
                 height: 80px;
-                width: 200px;
+                width: 220px;
                 left: 0;
                 background-color: $color-white;
                 padding: 20px;
@@ -74,7 +81,7 @@
                 box-shadow: 5px 5px $color-black;
                 @media screen and (min-width: 800px) {
                     left: 200px;
-                    transform: translateY(50%) rotate(-10deg);
+                    transform: translateY(50%);
                 }
 
                 h3 {
@@ -84,6 +91,7 @@
                     font-weight: 800;
                     letter-spacing: 1px;
                     font-size: 180%;
+                    text-transform: uppercase;
                 }
             }
 

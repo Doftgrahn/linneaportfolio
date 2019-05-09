@@ -16,8 +16,11 @@ header {
 
     h1 {
         margin: 0;
-        font-size: 300%;
+        font-size: 150%;
         font-weight: bold;
+        @media screen and (min-width: 800px) {
+            font-size: 300%;
+        }
     }
 
     .title {

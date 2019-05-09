@@ -17,6 +17,8 @@ import wildhart__live from "../../../assets/pictures/wildhart__live.jpg";
 
 import workShopPic from "../../../assets/pictures/intervention.jpg";
 
+const dataURL = "http://linneajardemark.nu/wp-json/wp/v2/work";
+
 class General extends Component {
     _isMounted = false;
 
@@ -29,19 +31,18 @@ class General extends Component {
             {id: 5, title: "Wildhart", picture: wildhart__live},
             {id: 6, title: "WorkShops", picture: workShopPic}
         ],
-        data: "http://linneajardemark.nu/wp-json/wp/v2/work",
         site: []
     };
 
     componentDidMount() {
-        const {data} = this.state;
         this._isMounted = true;
-        fetch(data)
+        fetch(dataURL)
             .then(res => res.json())
             .then(res => {
                 this.setState({site: res});
             });
     }
+
     componentWillUnmount() {
         this._isMounted = false;
     }
