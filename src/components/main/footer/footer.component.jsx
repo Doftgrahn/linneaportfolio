@@ -1,14 +1,18 @@
 import React from "react";
-import "./Footer.scss";
-import instagram from "../../shared/pictures/instagram.svg";
-import facebook from "../../shared/pictures/facebook.svg";
+import instagram from "../../../assets/pictures/instagram.svg";
+import facebook from "../../../assets/pictures/facebook.svg";
 
 const FooterComponent = () => {
     return (
         <footer>
             <div className="info">
-                <span>Phone: +4673498989</span>
-                <span>Email: Lorem@gmail.com</span>
+                <h2>
+                    Linnea <br /> Jardemark
+                </h2>
+                <div>
+                    <span>Phone: +4673498989</span>
+                    <span>Email: Lorem@gmail.com</span>
+                </div>
             </div>
 
             <div className="social-media">
@@ -26,6 +30,5 @@ const FooterComponent = () => {
         </footer>
     );
 };
-
 
 export default FooterComponent;

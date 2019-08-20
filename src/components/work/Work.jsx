@@ -1,11 +1,9 @@
 import React, {Component} from "react";
 
-import "./Work.scss";
-
 import NavBarWork from "./navbarChildren/navBarWork";
 import RoutingChildren from "../shared/routing-children";
 
-class WorkComponent extends Component {
+class Work extends Component {
     state = {
         title: [
             {id: 1, title: "EyesToEars"},
@@ -29,4 +27,4 @@ class WorkComponent extends Component {
     }
 }
 
-export default WorkComponent;
+export default Work;

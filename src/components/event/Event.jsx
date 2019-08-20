@@ -1,11 +1,12 @@
 import React, {Component} from "react";
-import "./Event.scss";
 
 import Event from "./children/event";
 
-const dataURL = "http://linneajardemark.nu/wp-json/wp/v2/event/";
+import {url} from "../../api/wordpress";
 
-class EventComponent extends Component {
+//const dataURL = "http://linneajardemark.nu/wp-json/wp/v2/event/";
+
+class Events extends Component {
     _isMounted = false;
 
     state = {
@@ -14,10 +15,13 @@ class EventComponent extends Component {
 
     componentDidMount() {
         this._isMounted = true;
-        fetch(dataURL)
+
+        fetch(`${url}/event/`)
             .then(res => res.json())
             .then(res => {
-                this.setState({site: res});
+                if (this._isMounted) {
+                    this.setState({site: res});
+                }
             });
     }
 
@@ -52,4 +56,4 @@ class EventComponent extends Component {
     }
 }
 
-export default EventComponent;
+export default Events;

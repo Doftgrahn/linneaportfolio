@@ -1,24 +1,35 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route} from "react-router-dom";
 
-import LandingPageComponent from '../landingPage/landingPage.component';
-import WorkComponent from '../work/work.component';
-import EventComponent from '../event/event.component';
-import AboutComponent from '../about/about.component';
+import LandingPage from "../landingPage/LandingPage";
+import Work from "../work/Work";
+import Events from "../event/Event";
+import About from "../about/About";
 
 class ContainerRouting extends Component {
+    state = {
+        routing: [
+            {exact: true, path: "/", component: LandingPage},
+            {exact: false, path: "/Home", component: LandingPage},
+            {exact: false, path: "/Work", component: Work},
+            {exact: false, path: "/Event", component: Events},
+            {exact: false, path: "/About", component: About},
+            {exact: false, path: "*", component: LandingPage}
+        ]
+    };
+
+    renderRouting = this.state.routing.map((e, i) => (
+        <Route
+            key={i}
+            exact={e.exact}
+            path={e.path}
+            render={props => <e.component {...props} count={this.props} />}
+        />
+    ));
 
     render() {
-        return (<Switch>
-            <Route exact={true} path="/" component={LandingPageComponent}/>
-            <Route path="/Home" component={LandingPageComponent}/>
-            <Route path="/Work" render={(props) => <WorkComponent {...props} count={this.props}/>}/>
-            <Route path="/Event" component={EventComponent}/>
-            <Route path="/About" component={AboutComponent}/>
-            <Route path="*" component={LandingPageComponent}/>
-        </Switch>)
-
+        return <Switch>{this.renderRouting}</Switch>;
     }
 }
 

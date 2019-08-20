@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import "./general.style.scss";
 import Container from "./children/container";
 import {Link} from "react-router-dom";
 
@@ -39,7 +38,7 @@ class General extends Component {
         fetch(dataURL)
             .then(res => res.json())
             .then(res => {
-                this.setState({site: res});
+                if (this._isMounted) this.setState({site: res});
             });
     }
 

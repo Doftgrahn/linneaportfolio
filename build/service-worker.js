@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/linneaportfolio/precache-manifest.a3c97a5da1d83055b9bd8e6da8fbf14f.js"
+  "/linneaportfolio/precache-manifest.f4a77cf81063ce39c0136116bcd1b801.js"
 );
 
 workbox.clientsClaim();

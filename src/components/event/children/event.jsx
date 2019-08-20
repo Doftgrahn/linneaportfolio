@@ -2,7 +2,7 @@ import React from "react";
 
 const Event = ({title, content, createMarkup}) => {
     return (
-        <div>
+        <div className="event-wrapper">
             <h3>{title}</h3>
             <div
                 className="content"

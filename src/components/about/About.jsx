@@ -1,10 +1,9 @@
 import React, {Component} from "react";
-import "./About.scss";
 import AboutMe from "./children/about_me";
 
 const dataURL = "http://linneajardemark.nu/wp-json/wp/v2/about_me/";
 
-class AboutComponent extends Component {
+class About extends Component {
     _isMounted = false;
 
     state = {
@@ -16,7 +15,9 @@ class AboutComponent extends Component {
         fetch(dataURL)
             .then(res => res.json())
             .then(res => {
-                this.setState({site: res});
+                if (this._isMounted) {
+                    this.setState({site: res});
+                }
             });
     }
 
@@ -53,4 +54,4 @@ class AboutComponent extends Component {
     }
 }
 
-export default AboutComponent;
+export default About;

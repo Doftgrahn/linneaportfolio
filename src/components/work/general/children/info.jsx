@@ -5,7 +5,7 @@ const Info = () => {
         <div className="info">
         <div className="info_container">
             <p>These are the different projects i'm working on at the moment</p>
-            <p> please don´t get lost! </p>
+            <p> please get lost! </p>
             </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import "./LandingPage.scss";
 import {Link} from "react-router-dom";
 
 import upperLinnea from "../../assets/pictures/LinneaTop.png";
@@ -12,7 +11,7 @@ class LandingPageComponent extends Component {
             Click here to check out my stuff!
         </Link>
     );
-    
+
     render() {
         return (
             <main className="landingPage">

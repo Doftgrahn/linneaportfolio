@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
-import "./Header.scss";
 import Hamburger from "./children/hamburger";
 import Navbar from "./children/navbar";
 
@@ -32,7 +31,7 @@ class HeaderComponent extends Component {
     render() {
 
         let {toggle} = this.state;
-        
+
         return (
             <header>
                 <h1>{this.title()}</h1>

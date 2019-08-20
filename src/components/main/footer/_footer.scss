@@ -1,4 +1,3 @@
-@import '../../shared/variables.scss';
 
 footer {
     display: flex;
@@ -10,19 +9,28 @@ footer {
     z-index: -1;
     padding: 20px;
     width: 100%;
-    height: 200px;
+    //height: 200px;
     background-color: $color-green;
 
     .info {
-        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        //padding: 100px;
+
+        h2 {
+            margin: 0;
+        }
 
         span {
             display: block;
+            margin: 0 50px;
         }
     }
 
     .social-media {
-        padding: 20px;
+        //padding: 100px;
         display: flex;
         flex-direction: row;
 
